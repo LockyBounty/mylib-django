@@ -1,0 +1,21 @@
+{% extends "base_generic.html" %}
+
+{% block content %}
+  <h1>Author: {{ author.first_name }} {{author.last_name}}</h1>
+  {{author.date_of_birth}}
+
+
+  <div style="margin-left:20px;margin-top:20px">
+    <h4>Books:</h4>
+
+    {% for books in author.author_set.all %}
+      <hr>
+      <p>  {{books.book_id}} </p>
+      <!-- <p class="{% if copy.status == 'a' %}text-success{% elif copy.status == 'm' %}text-danger{% else %}text-warning{% endif %}">{{ copy.get_status_display }}</p>
+      
+      <p><strong>Due to be returned:</strong> {{copy.due_back}}</p>
+     
+      <p class="text-muted"><strong>Id:</strong> {{copy.id}}</p> -->
+    {% endfor %}
+  </div>
+{% endblock %}
