@@ -28,7 +28,7 @@ SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY', '28q00^0a0p+k9m6k0-i1ji1rck05sy
 DEBUG = os.environ.get('DJANGO_DEBUG', '') != 'False'
 
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['shielded-ravine-83334.herokuapp.com']
 
 
 # Application definition
