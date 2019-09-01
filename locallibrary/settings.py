@@ -28,7 +28,7 @@ SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY', '28q00^0a0p+k9m6k0-i1ji1rck05sy
 DEBUG = os.environ.get('DJANGO_DEBUG', '') != 'False'
 
 
-ALLOWED_HOSTS = ['shielded-ravine-83334.herokuapp.com']
+ALLOWED_HOSTS = ['shielded-ravine-83334.herokuapp.com','localhost']
 
 
 # Application definition
@@ -83,9 +83,10 @@ WSGI_APPLICATION = 'locallibrary.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'testdb1',
-        'USER':'root',
-        'PASSWORD': 'toor',
+        'NAME': 'mylib2',
+        'USER':'mylib2',
+        'PASSWORD': 'Al1lq_?Z4hma',
+        'HOST': 'den1.mysql3.gear.host',
         #'OPTIONS' : { 'read_default_file': '/etc/mysql/my.cnf' }
     }
 }
