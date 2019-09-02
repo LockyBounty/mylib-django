@@ -1,6 +1,6 @@
 *.pyc
 *~
-*.sql
+/sq
 __pycache__
 myvenv
 db.sqlite3
