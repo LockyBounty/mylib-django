@@ -90,14 +90,14 @@ DATABASES = {
         'HOST': 'den1.mysql3.gear.host',
         #'OPTIONS' : { 'read_default_file': '/etc/mysql/my.cnf' }
     },
-    'postgresql':{
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'psqldb1',
-        'USER': 'postgres',
-        'PASSWORD': 'postgres',
-        'HOST': 'localhost',
-        'PORT': '',
-    }
+    # 'postgresql':{
+    #     'ENGINE': 'django.db.backends.postgresql_psycopg2',
+    #     'NAME': 'psqldb1',
+    #     'USER': 'postgres',
+    #     'PASSWORD': 'postgres',
+    #     'HOST': 'localhost',
+    #     'PORT': '',
+    # }
 }
 
 
